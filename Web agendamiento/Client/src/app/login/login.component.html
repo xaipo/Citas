@@ -1,0 +1,30 @@
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+<br/>
+<br/>
+
+<form class="loginbody" #registerForm="ngForm" (ngSubmit)="login()">
+
+  <div class="row">
+    <div class="col-md-3 mx-auto col-xs-12">
+      <div class="text-center">
+        <br/>
+        <br/>
+        <br/>
+        <img class="imageShadow responsive" src="/assets/logo.png" style="width:90%; height:90%"/>
+        <br/>
+        <br/>
+        <h3 style="color:white">AGENDAMIENTO</h3>
+        <br/>
+        <input class="form-control" name="user"  [(ngModel)]="user.email" type="text" placeholder="Nombre de Usuario"/>
+        <input class="form-control" name="password"  type="password"  [(ngModel)]="user.password" placeholder="Contraseña"/>
+
+        <button class="btn btn-primary form-control" type="submit" value="Ingresar">Ingresar&nbsp;<i class="fa fa-sign-in"></i></button>
+        <br/>
+        <br/>
+
+        <h6 style="color:white">©{{date.getFullYear()}} Powered by  Riobytes® CIA. LTDA.</h6>
+      </div>
+    </div>
+  </div>
+</form>
